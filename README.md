@@ -1,26 +1,28 @@
 # Airline Passenger Satisfaction Prediction
 
-This is a Machine Learning project that I worked on to predict whether an airline passenger is satisfied with their travel experience.
+A Machine Learning project focused on predicting airline passenger satisfaction using classification algorithms. The project includes data preprocessing, model training, performance evaluation, and an interactive web application built with Streamlit.
 
-I explored the dataset, performed preprocessing, trained different classification models, and compared their performance to find the best-performing model. I also created a simple web interface using Streamlit to make predictions easier.
+## Live Demo
 
-## About the Project
+**Try the application:** [Airline Passenger Satisfaction – Live App](https://airline-passenger-satisfaction-4oxjvg9h2hy6ff6ktzkdik.streamlit.app/)
 
-The main objective is to predict passenger satisfaction based on details such as:
+**Source Code:** [GitHub Repository](https://github.com/catherinesg03/airline-passenger-satisfaction)
 
-- Gender
-- Customer Type
-- Age
-- Type of Travel
-- Class
-- Flight distance
-- In-flight services
-- Seat comfort
-- Departure and arrival delays
+## Project Overview
 
-## Machine Learning Models Used
+The objective of this project is to predict whether an airline passenger is satisfied or neutral/dissatisfied based on their travel experience and service ratings.
 
-I trained and evaluated the following models:
+The dataset includes features such as:
+
+- Gender and Customer Type
+- Age and Type of Travel
+- Travel Class and Flight Distance
+- In-flight services and Seat Comfort
+- Departure and Arrival Delays
+
+## Machine Learning Models
+
+I trained and evaluated the following classification algorithms:
 
 - K-Nearest Neighbors (KNN)
 - Gaussian Naive Bayes
@@ -31,44 +33,61 @@ I trained and evaluated the following models:
 - Logistic Regression
 - XGBoost
 
-**Best Model:** XGBoost
+**Best Performing Model:** XGBoost
 
-**Accuracy:** 96.31%
+**Test Accuracy:** 96.31%
 
-## Streamlit Application
+## Streamlit Web Application
 
-I used Streamlit to build an interactive interface where users can enter passenger details and get a satisfaction prediction.
+An interactive web interface was developed using Streamlit. Users can enter passenger details and receive a satisfaction prediction.
 
-## Project Files
+[Open Live Application](https://airline-passenger-satisfaction-4oxjvg9h2hy6ff6ktzkdik.streamlit.app/)
 
-- `Airline_Passenger_Satisfaction.ipynb` – Notebook containing the data analysis, preprocessing and model training.
-- `airline_passenger_satisfaction.csv` – Dataset used for the project.
-- `data_dictionary.csv` – Description of the dataset columns.
-- `app.py` – Streamlit application.
-- `airline_satisfaction_model.pkl` – Saved trained model and preprocessing information.
-- `airport_background.png` – Background image used in the application.
-- `requirements.txt` – Required Python libraries.
+## Project Structure
 
-## Run the Project Locally
+| File | Description |
+|---|---|
+| `Airline_Passenger_Satisfaction.ipynb` | Data analysis, preprocessing and model training |
+| `airline_passenger_satisfaction.csv` | Original dataset |
+| `data_dictionary.csv` | Dataset column descriptions |
+| `app.py` | Streamlit application |
+| `airline_satisfaction_model.pkl` | Trained model and preprocessing information |
+| `airport_background.png` | Application background image |
+| `requirements.txt` | Required Python libraries |
+| `README.md` | Project documentation |
 
-1. Clone this repository:
+## Run Locally
 
-   `git clone https://github.com/catherinesg03/airline-passenger-satisfaction.git`
+To run the application on your system:
 
-2. Open the project folder.
+**1. Clone the repository**
 
-3. Install the required libraries:
+```bash
+git clone https://github.com/catherinesg03/airline-passenger-satisfaction.git
+```
 
-   `pip install -r requirements.txt`
+**2. Navigate to the project folder**
 
-4. Run the Streamlit application:
+```bash
+cd airline-passenger-satisfaction
+```
 
-   `streamlit run app.py`
+**3. Install the dependencies**
 
-5. Open the local URL displayed in your terminal.
+```bash
+pip install -r requirements.txt
+```
 
-## Result
+**4. Run the Streamlit application**
 
-Among the models I tested, XGBoost achieved the highest accuracy of approximately 96.31% on the test dataset.
+```bash
+streamlit run app.py
+```
 
-This project helped me understand the process of building, evaluating and deploying a Machine Learning classification model.
+The application will open in your browser at the local URL provided by Streamlit.
+
+## Results
+
+Among the classification models evaluated, XGBoost achieved the highest test accuracy of approximately **96.31%**.
+
+Through this project, I gained practical experience in data preprocessing, classification algorithms, model evaluation, and deploying a Machine Learning application using Streamlit.
